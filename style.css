@@ -134,6 +134,9 @@ h3 {
 p {
     text-align: justify;
 }
+.main__ul {
+    padding-left: 1rem;
+}
 .main__video {
     display: flex;
     flex-direction: column;
@@ -155,8 +158,8 @@ p {
 .main__galeria {
     display: grid;
     gap: 2px;
-    grid-template-columns: repeat(auto-fill,minmax(100px,1fr));
-    grid-template-columns: repeat(3,minmax(100px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    grid-template-columns: repeat(3,minmax(50px,1fr));
     gap: 3px;
     justify-content: center;
     align-content: center;
@@ -244,7 +247,7 @@ input:checked+.slidebar::before {
         font-size: .8rem;
     }
     h2::before {
-        top: 550%;
+        top: 25vh;
         height: 1px;
         width: 3px;
         border: 25px solid transparent;
@@ -272,8 +275,11 @@ input:checked+.slidebar::before {
         align-items: center;
         height: 100%;
     }
+    .ul__header {
+        flex-wrap: wrap;
+    }
     h2::before {
-        top: 200%;
+        top: 15vh;
         height: 1px;
         width: 3px;
         border: 25px solid transparent;
